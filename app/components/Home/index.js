@@ -13,7 +13,6 @@ module.exports = React.createClass({
             country: "",
             website: "",
             yourName: "",
-            yourPosition: "",
             why: "",
             disabled: false,
             error: null,
@@ -53,7 +52,7 @@ module.exports = React.createClass({
             country: this.state.country,
             website: this.state.website,
             yourName: this.state.yourName,
-            yourPosition: this.state.yourPosition,
+            yourPosition: "STUDENT",
             why: this.state.why
         },{
             pre: function(){
@@ -78,7 +77,6 @@ module.exports = React.createClass({
                     <input type="text" placeholder="Country" value={this.state.country} onChange={this.onChange.bind(null,"country")} />
                     <input type="text" placeholder="University Website URL" value={this.state.website} onChange={this.onChange.bind(null,"website")} />
                     <input type="text" placeholder="Your Name" value={this.state.yourName} onChange={this.onChange.bind(null,"yourName")} />
-                    <input type="text" placeholder="Your Position" value={this.state.yourPosition} onChange={this.onChange.bind(null,"yourPosition")} />
                     <textarea placeholder="Why does your university need TalkCampus?" value={this.state.why} onChange={this.onChange.bind(null,"why")} />
                     <input type="submit" className="gradient" />
                 </form>
