@@ -70,7 +70,7 @@ module.exports = React.createClass({
     render: function() {
         var form = (
             <div>
-                <h3>Register Your Interest</h3>
+                <h3>Want us to sign up your University?</h3>
                 {this.state.error ? (<div className="error">{this.state.error}</div>) : null}
                 <form onSubmit={this.submit}>
                     <input type="text" placeholder="Campus Name" value={this.state.campusName} onChange={this.onChange.bind(null,"campusName")} />
@@ -100,7 +100,7 @@ module.exports = React.createClass({
                 <div className="lower">
                     <div className="content">
                         <h2>Campus is Coming</h2>
-                        <p>TalkLife Campus is built for students. Chat with peers in a safe encouraging environment. Access all of your campus student mental health services in one place.</p>
+                        <p>TalkLife Campus is built for students. Chat with other students in a safe, encouraging environment. Access all of your campus student mental health services in one place.</p>
                         {form}
                     </div>
                 </div>
